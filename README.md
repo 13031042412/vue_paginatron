@@ -3,8 +3,9 @@
 vue 分页组件
 
 ### 配合bootstrap使用,效果更好
+
 ### Install the npm package.
-npm install vuejs-paginate --save
+`npm install vuejs-paginate --save`
 
 ## 使用demo
 
@@ -44,10 +45,10 @@ Vue.component('paginate', Paginate)
 
 ## CDN
 
-####use the latest release
+#### use the latest release
 `<script src="https://unpkg.com/vuejs-paginate@latest"></script>`
 
-####or use the specify version
+#### or use the specify version
 `<script src="https://unpkg.com/vuejs-paginate@0.9.0"></script>`
 
 `Vue.component('paginate', VuejsPaginate)`
