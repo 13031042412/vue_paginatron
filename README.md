@@ -1,11 +1,14 @@
 # vue_paginatron
 
-> vue 分页组件
-# 配合bootstrap使用,效果更好
-# Install the npm package.
+vue 分页组件
+
+### 配合bootstrap使用,效果更好
+### Install the npm package.
 npm install vuejs-paginate --save
 
-#使用demo
+## 使用demo
+
+```
 <paginate
     v-model="page"                  //绑定当前页数
     :page-count="20"                //分页总数 必须项
@@ -23,16 +26,17 @@ npm install vuejs-paginate --save
     :next-link-class="'page-link'"
     :first-last-button="true"       //是否开启首页和尾页
 ></paginate>
+```
 
 # Register the component.
-# ES5
+## ES5
 var Paginate = require('vuejs-paginate')
 Vue.component('paginate', Paginate)
-# ES6
+## ES6
 import Paginate from 'vuejs-paginate'
 Vue.component('paginate', Paginate)
 
-# CDN
+## CDN
 <!-- use the latest release -->
 <script src="https://unpkg.com/vuejs-paginate@latest"></script>
 <!-- or use the specify version -->
