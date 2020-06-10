@@ -9,6 +9,7 @@ npm install vuejs-paginate --save
 ## 使用demo
 
 ```
+import Paginate from "vuejs-paginate";
 <paginate
     v-model="page"                  //绑定当前页数
     :page-count="20"                //分页总数 必须项
@@ -30,18 +31,26 @@ npm install vuejs-paginate --save
 
 # Register the component.
 ## ES5
+```
 var Paginate = require('vuejs-paginate')
 Vue.component('paginate', Paginate)
+```
+
 ## ES6
+```
 import Paginate from 'vuejs-paginate'
 Vue.component('paginate', Paginate)
+```
 
 ## CDN
-<!-- use the latest release -->
-<script src="https://unpkg.com/vuejs-paginate@latest"></script>
-<!-- or use the specify version -->
-<script src="https://unpkg.com/vuejs-paginate@0.9.0"></script>
-Vue.component('paginate', VuejsPaginate)
+
+####use the latest release
+`<script src="https://unpkg.com/vuejs-paginate@latest"></script>`
+
+####or use the specify version
+`<script src="https://unpkg.com/vuejs-paginate@0.9.0"></script>`
+
+`Vue.component('paginate', VuejsPaginate)`
 
 
 
