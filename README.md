@@ -1,9 +1,28 @@
 # vue_paginatron
 
 > vue 分页组件
-# 配合bootstrap使用
+# 配合bootstrap使用,效果更好
 # Install the npm package.
 npm install vuejs-paginate --save
+
+#使用demo
+<paginate
+    v-model="page"                  //绑定当前页数
+    :page-count="20"                //分页总数 必须项
+    :page-range="3"
+    :margin-pages="3"
+    :click-handler="clickCallback"  //点击时的回调方法 使用点击的页码作为参数
+    :prev-text="'上一页'"
+    :next-text="'下一页'"
+    :container-class="'pagination'"
+    :page-class="'page-item'"
+    :page-link-class="'page-link'"
+    :prev-class="'page-item'"
+    :prev-link-class="'page-link'"
+    :next-class="'page-item'"
+    :next-link-class="'page-link'"
+    :first-last-button="true"       //是否开启首页和尾页
+></paginate>
 
 # Register the component.
 # ES5
